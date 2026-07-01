@@ -1,0 +1,2 @@
+### GET request for patient
+GET http://localhost:4001/patients
