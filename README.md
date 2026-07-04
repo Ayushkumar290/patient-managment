@@ -10,14 +10,14 @@ The system is decoupled into two primary microservices:
 * **Billing Service (`/billing-service`)**: An independent service that manages financial accounts for patients[cite: 3]. It operates as a gRPC server (`BillingGrpcService`) to process high-speed internal requests[cite: 3].
 
 ### Inter-Service Communication
-The `patient-service` acts as a gRPC client (`BillingServiceGrpcClient`) to communicate directly with the `billing-service`[cite: 3]. The strict contract between these two services is defined using Protocol Buffers (`billing_service.proto`, located in both services' `/src/main/proto/` directories)[cite: 3].
+The `patient-service` acts as a gRPC client (`BillingServiceGrpcClient`) to communicate directly with the `billing-service`. The strict contract between these two services is defined using Protocol Buffers (`billing_service.proto`, located in both services' `/src/main/proto/` directories).  
 
 ## 🚀 Tech Stack
 
 * **Framework:** Java / Spring Boot[cite: 3]
-* **Build Tool:** Maven (Includes `mvnw` wrappers for consistent environments)[cite: 3]
+* **Build Tool:** Maven (Includes `mvnw` wrappers for consistent environments)  
 * **RPC Framework:** gRPC & Protocol Buffers[cite: 3]
-* **Containerization:** Docker (`Dockerfile` provided within each service module)[cite: 3]
+* **Containerization:** Docker (`Dockerfile` provided within each service module)  
 
 ## 📂 Key Features
 
